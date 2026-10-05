@@ -64,6 +64,12 @@ footer p{
     padding: 2em;
 }
 
-.comidas-chatarras, .comidas-veganas > h2{
+.comidas-chatarras > h2, .comidas-veganas > h2{
     color: white;
+}
+
+.titulo-pagina{
+    color: #212529;
+    border: none;
+    padding: 0;
 }
