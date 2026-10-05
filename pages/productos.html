@@ -3,9 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Productos - Mi tienda</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Mi tienda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="text-center titulo-pagina my-4">Nuestros Productos</h1>
+
+        <section class="comidas-chatarras">
+            <h2 class="mb-4">Comidas Chatarras</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/hamburguesa-doble.jpg" class="card-img-top" alt="Hamburguesa Doble">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Hamburguesa Doble</h5>
+                                <p class="card-text">Doble carne, cheddar y panceta. $4500</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto1">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/papas-cheddar.jpg" class="card-img-top" alt="Papas Fritas Cheddar">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Papas Fritas Cheddar</h5>
+                                <p class="card-text">Porción grande con cheddar y panceta crocante. $3200</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto2">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/pizza-pepperoni.jpg" class="card-img-top" alt="Pizza Pepperoni">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Pizza Pepperoni</h5>
+                                <p class="card-text">Muzzarella y pepperoni, masa a la piedra. $5800</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto3">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="comidas-veganas">
+            <h2 class="mb-4">Comidas Veganas</h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/bowl-de-quinoa.jpg" class="card-img-top" alt="Bowl de Quinoa">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Bowl de Quinoa</h5>
+                                <p class="card-text">Quinoa, palta, garbanzos y vegetales de estación. $4200</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto4">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/hamburguesa-de-lentejas.jpg" class="card-img-top" alt="Hamburguesa de Lentejas">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Hamburguesa de Lentejas</h5>
+                                <p class="card-text">Medallón de lentejas con vegetales grillados. $4000</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto5">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../img/ensalada-thai-de-tofu.jpg" class="card-img-top" alt="Ensalada Thai de Tofu">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Ensalada Thai de Tofu</h5>
+                                <p class="card-text">Tofu salteado, fideos de arroz y salsa de maní. $3900</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProducto6">
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="modalProducto1" tabindex="-1" aria-labelledby="modalProducto1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto1Label">Hamburguesa Doble</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/hamburguesa-doble.jpg" class="img-fluid mb-3 rounded" alt="Hamburguesa Doble">
+                    <p>Dos medallones de carne 100% vacuna, doble cheddar, panceta ahumada, cebolla caramelizada y salsa especial de la casa, en pan brioche.</p>
+                    <p class="fw-bold">Precio: $4500</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto2" tabindex="-1" aria-labelledby="modalProducto2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto2Label">Papas Fritas Cheddar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/papas-cheddar.jpg" class="img-fluid mb-3 rounded" alt="Papas Fritas Cheddar">
+                    <p>Porción grande de papas fritas bañadas en salsa cheddar, panceta crocante y cebolla de verdeo.</p>
+                    <p class="fw-bold">Precio: $3200</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto3" tabindex="-1" aria-labelledby="modalProducto3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto3Label">Pizza Pepperoni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/pizza-pepperoni.jpg" class="img-fluid mb-3 rounded" alt="Pizza Pepperoni">
+                    <p>Masa a la piedra, muzzarella abundante y pepperoni, horneada al momento. Tamaño mediana (8 porciones).</p>
+                    <p class="fw-bold">Precio: $5800</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto4" tabindex="-1" aria-labelledby="modalProducto4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto4Label">Bowl de Quinoa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/bowl-de-quinoa.jpg" class="img-fluid mb-3 rounded" alt="Bowl de Quinoa">
+                    <p>Quinoa real, palta, garbanzos tostados, tomates cherry, hojas verdes y aderezo de limón y tahini. 100% vegano.</p>
+                    <p class="fw-bold">Precio: $4200</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto5" tabindex="-1" aria-labelledby="modalProducto5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto5Label">Hamburguesa de Lentejas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/hamburguesa-de-lentejas.jpg" class="img-fluid mb-3 rounded" alt="Hamburguesa de Lentejas">
+                    <p>Medallón casero de lentejas y especias, con vegetales grillados, rúcula y mayonesa vegana, en pan integral.</p>
+                    <p class="fw-bold">Precio: $4000</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProducto6" tabindex="-1" aria-labelledby="modalProducto6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProducto6Label">Ensalada Thai de Tofu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/ensalada-thai-de-tofu.jpg" class="img-fluid mb-3 rounded" alt="Ensalada Thai de Tofu">
+                    <p>Tofu salteado, fideos de arroz, zanahoria, repollo morado y maní, con salsa thai de maní y lima.</p>
+                    <p class="fw-bold">Precio: $3900</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Mi tienda</h2>
+        <div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./categorias.html">Categorias</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <p>Todos los derechos reservados &copy; 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
